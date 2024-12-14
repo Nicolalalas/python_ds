@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Load the dataset
 file_path = '/mnt/data/extracted_dataset/Full_Dataset.csv'
 
-# Check if the file exists
+
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"Dataset file not found at {file_path}. Please ensure the file is correctly located.")
 
@@ -72,3 +72,4 @@ print("1. Goals scored have shown an upward trend, indicating more dynamic match
 print("2. The most successful team(s) historically are:")
 print(winning_teams.head())
 print("3. Host countries have a moderate advantage, as they have won", len(hosted_wins), "times.")
+
